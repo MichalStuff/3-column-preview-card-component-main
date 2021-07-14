@@ -1,0 +1,154 @@
+//FONTS
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+//Primary Colors
+
+$clr-primary-bright: hsl(31, 77%, 52%);
+$clr-primary-dark: hsl(184, 100%, 22%);
+$clr-primary-verydark: hsl(179, 100%, 13%);
+
+//Neutral Colors
+
+$clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+$clr-neutral-light-gray:hsl(0, 0%, 95%);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    // max-height: 100vh;
+    background-color: $clr-neutral-light-gray;
+
+}
+// FLEX - MAIN CONTAINER
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 9rem 0 7rem 0;
+    width: 80%;
+
+    @media (min-width: 1439px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+
+        .car {
+            position: relative;
+            flex-basis: 20%;
+            height: 50vh;
+            padding: 3rem 3rem;
+
+            &__title {
+                font-size: 2.2rem;
+            }
+
+            &--sedans {
+                border-radius: 10px 0 0 10px;
+            }
+
+            &--luxury {
+                border-radius: 0 10px 10px 0;
+            }
+
+            &__btn {
+                position: absolute;
+                bottom: 2rem;
+                left: 2rem;
+
+                &--sedans:hover {
+                    background-color: $clr-primary-bright;
+                    color: $clr-neutral-light-gray;
+                }
+
+                &--suvs:hover {
+                    background-color: $clr-primary-dark;
+                    color: $clr-neutral-light-gray;
+                }
+
+                &--luxury:hover {
+                    background-color: $clr-primary-verydark;
+                    color: $clr-neutral-light-gray;
+                }
+            }
+        }
+    } 
+}
+// SECTION
+.car {
+    width: 100%;
+    padding: 2rem 2rem;
+
+    &--sedans {
+        background-color: $clr-primary-bright;
+        border-radius: 10px 10px 0 0;
+    }
+
+    &--suvs {
+        background-color: $clr-primary-dark;
+    }
+
+    &--luxury {
+        background-color: $clr-primary-verydark;
+        border-radius: 0 0 10px 10px;
+    }
+
+    &__title {
+        margin: 2rem 0;
+        color: $clr-neutral-light-gray;
+        font-size: 2rem;
+        font-family: 'Big Shoulders Display', cursive;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        margin: 2rem 0;
+        color: $clr-neutral-transparent-white;
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 150%;
+
+    }
+
+    &__btn {
+        display: block;
+        text-decoration: none;
+        border: none;
+        background-color: $clr-neutral-light-gray;
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+        font-family: 'Lexend Deca', sans-serif;
+        border: 2px solid $clr-neutral-light-gray;
+
+        &--sedans {
+            color: $clr-primary-bright;
+        }
+
+        &--suvs {
+            color: $clr-primary-dark;
+        }
+
+        &--luxury {
+            color: $clr-primary-verydark;
+        }
+    }
+}
+.attribution{
+    flex-basis: 100%;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: 'Lexend Deca', sans-serif;
+    text-align: center;
+    & a{
+        text-decoration: none;
+        color: hsl(228, 45%, 44%);
+    }
+}

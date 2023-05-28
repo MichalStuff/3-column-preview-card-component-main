@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponentflex-zmgkJj51L)
 
 ## My process
 
@@ -37,7 +37,7 @@ Users should be able to:
   For styles
 
 ### What I learned
-
+Practiced
 ### Continued development
 
 ### Useful resources

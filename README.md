@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponentflex-zmgkJj51L)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponentflex-XSwmKIL8M)
 
 ## My process
 
